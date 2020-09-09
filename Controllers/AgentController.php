@@ -21,7 +21,7 @@ class AgentController extends Controller
     public function checkSum(Request $request)
     {
         return app()
-            ->make($this->chooseRightAgentController($request->serviceID))
+            ->make($this->chooseRightAgentController($request->serviceId))
             ->checkSum($request);
     }
 
